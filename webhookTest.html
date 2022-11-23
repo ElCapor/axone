@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Discord Webhook Test</title>
+  </head>
+  <body>
+
+<label>Feedback <input type="text" id="input" name="input" /></label>
+    <button onclick="sendMessage()">Send</button>
+
+  </body>
+
+  <script>
+    function sendMessage() {
+      const request = new XMLHttpRequest();
+      request.open("POST", "https://discord.com/api/webhooks/902664098209210389/UhBvVn77OUWmIeR-YLb3G_1mjJOa8g5H0bNJ_mCJaRUtVrB0GZCESmtIp96rQ8ieXwuw");
+
+      request.setRequestHeader('Content-type', 'application/json');
+
+      const params = {
+  "username": "Optic Inc Feedback",
+  "avatar_url": "https://media.discordapp.net/attachments/902315571025158225/902357977829359686/logo.png",
+  "content": "",
+  "embeds": [
+    {
+      "title": "Content :",
+      "color": 2463422,
+      "description": document.querySelector("input").value,
+      "timestamp": "",
+      "author": {
+        "name": "New feedback !",
+        "url": "https://media.discordapp.net/attachments/902315571025158225/902540921957146634/logofeedback.png",
+        "icon_url": "https://media.discordapp.net/attachments/902315571025158225/902357977829359686/logo.png"
+      },
+      "image": {
+        "url": ""
+      },
+      "thumbnail": {
+        "url": "https://media.discordapp.net/attachments/902665492332957708/902665624529027113/optic.jpg"
+      },
+      "footer": {
+        "text": "From axonedev.xyz/projects"
+      },
+      "fields": []
+    }
+  ],
+  "components": [
+    {
+      "type": 1,
+      "components": [
+        {
+          "type": 2,
+          "style": 5,
+          "label": "Website",
+          "url": "http://axonedev.xyz"
+        }
+      ]
+    }
+  ]
+}
+
+      request.send(JSON.stringify(params));
+    }
+  </script>
+
+<a href="ufs/ufs.html">yup</a>
+
+
+    <div class="container">
+        <div class="col-xs-12 col-sm-4 col-md-8 col-sm-offset-2 col-md-offset-2">
+        <div id="iStatus"></div>
+        <div class="well profileCard" style="margin-top:5px">
+          <div class="row">
+            <div class="col-xs-6">
+              <h4>Who are we ? - About Us</h4>
+          <b>Content:</b><br>
+          We are a group of developpers working on ROBLOX projects (mostly). We have made this website to share what we are doing or what we have created. 
+          <p></p>You can ask on our Discord to share your own project/creation. Axone does not permit and will not share malicious project/creation that ruins other users experience. Only "educational" projects/creations are accepted. Meaning that this project/creation will not be used to harm users, games, or other but used for learning and improve development skills. You ARE NOT ALLOWED to steal the content of this website.
+          <p></p>
+          <p style="color:grey">All rights belong to Your Local Musk and the Axone Team (Your Local Musk, Oxype)
+          </p>
+          </div>
+            <div class="col-xs-6">
+              <h4>User Info</h4>
+              <a href="/user/profile/Graphictoria"><img height="150" width="150" src="core/html/img/logo.png"></a>
+              <p><b>Posted By: </b><a href="">Axone team</a><p><b>Posted On: </b>Oct 28, 2021</p>
+              <a href="index.html" class="btn btn-primary fullWidth">Browse profile</a></div>
+          </div>
+
+
+</html>

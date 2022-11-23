@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-		<title>Axone | Home</title>
+		<title>Axone | Learn</title>
 
 <!-- EMBED -->
 
-<meta content="Axone | Home" property="og:title" />
+<meta content="Axone | Learn" property="og:title" />
 <meta content="Axone is a 1-year-old group of advanced and/or beginners developpers. We've made many projects, and by this time we'll release soon our last project, The Axone's Final Project (AFP)." property="og:description" />
 <meta content="http://axonedev.xyz" property="og:url" />
 <meta property="og:image" content="core/html/img/logo.png" />
@@ -113,8 +113,6 @@
 		<div class="overlay"></div>
 </nav>
 
-
-
 <div style="margin-bottom:54px"></div><div class="alert alert-success center" style="padding-top: 7px;padding-bottom: 5px;"><b>Axone v2</b> has been released and is now finished (not really, ya know me)! &nbsp; <a href="https://discord.gg/yVNFwRYBXH" class="btn btn-primary">Discord</a></div>
 <div class="modal globalModal" tabindex="-1" role="dialog" aria-labelledby="modalglobal" aria-hidden="true">
 	<div class="modal-dialog modal-sm" role="document">
@@ -152,7 +150,6 @@
 
 
 
-
 <!-- useless for now 
 
 <div class="modal fade" id="globalModal2" tabindex="-1" role="dialog" aria-labelledby="globalModal" aria-hidden="true">
@@ -170,165 +167,122 @@
 </div>
 -->
 
+
+		<script src="core/func/js/users.js"></script>
 		<div class="container">
-			<div id="particles-js">
-				<div class="col-xs-12 col-sm-12 col-md-7">
-					<h3 class="wtext">Welcome to Axone!</h3>
-					<p class="wtext">Discover what we've made or what are we working on here !</p>
-					<p class="wtext">Tell us what you want next by submitting a feedback on the right --></p>
+			<div class="col-xs-12 col-sm-2">
+				<ins class="adsbygoogle"
+					 style="display:block"
+					 data-ad-client="ca-pub-3667210370239911"
+					 data-ad-slot="3743605946"
+					 data-ad-format="auto"
+					 data-full-width-responsive="true"></ins>
+
+
+			</div>
+			<div class="col-xs-12 col-sm-8 col-md-8">
+				<div class="well profileCard">
+			
+					<img class="img-creations" src="core/html/img/learn.jpg"/>
+					<br></br>
+					<p>Learning is the acquisition of knowledge or skills through study, experience, or being taught. On this page, discover many tutorials in C#, HTML, CSS, javascript, php, lua... and off topic tutorials.</p>
+
+					<div class="form-group">
+						<div class="input-group">
+							</span>
+						</div>
+					</div>
 				</div>
 
-				<div class="col-xs-12 col-sm-12 col-md-5">
-					
-					<h3 class="wtext">Your opinion matter</h3>
-					<p class="wtext">Submit your feedback below<div id="rStatus"></div>
 
-					<textarea class="form-control" type="text" id="textarea" placeholder="your feedback here"></textarea>
 
-					<button onclick="sendMessage()" class="btn btn-primary fullWidth cooldown" id="rSubmit">submit</button>
-					<p></p>
+<div class="well profileCard">
+						<div class="row">
+							<div class="col-xs-3">
+								<a href="">
+									<img height="150" width="150" src="core/html/img/html-css.png">
+								</a>
+							</div>
+						<div class="col-xs-9">
 
-  <script>
-    function sendMessage() {
-      const request = new XMLHttpRequest();
-      request.open("POST", "https://discord.com/api/webhooks/902697459644514335/VsGZnyiqPoY8S_R8YnJUn8lolYQWa9V6Z4shER6-Ym2KRopz6pIDncbEcP_NfpfLCb70");
+								<h4>
+									<p><font color="red">●</font> Basic Learning in HTML/CSS. [IN DEV]</p>
+									<a href="http://axonedev.xyz/ufs" class="btn btn-primary" style="margin-bottom:10px;">Learn</a>
+								</h4>
 
-      request.setRequestHeader('Content-type', 'application/json');
+								<b>Creation Date :</b>
+										 27/10/2021
+								<br>
 
-      const params = {
-  "username": "Axone Feedback",
-  "avatar_url": "https://media.discordapp.net/attachments/902315571025158225/902357977829359686/logo.png",
-  "content": "",
-  "embeds": [
-    {
-      "title": "Content :",
-      "color": 2463422,
-      "description": document.querySelector("textarea").value,
-      "timestamp": "",
-      "author": {
-        "name": "New feedback !",
-        "url": "https://media.discordapp.net/attachments/902315571025158225/902540921957146634/logofeedback.png",
-        "icon_url": "https://media.discordapp.net/attachments/902315571025158225/902357977829359686/logo.png"
-      },
-      "image": {
-        "url": ""
-      },
-      "thumbnail": {
-        "url": "https://media.discordapp.net/attachments/902315571025158225/902357977829359686/logo.png"
-      },
-      "footer": {
-        "text": "From axonedev.xyz"
-      },
-      "fields": []
-    }
-  ],
-  "components": [
-    {
-      "type": 1,
-      "components": [
-        {
-          "type": 2,
-          "style": 5,
-          "label": "Website",
-          "url": "http://axonedev.xyz"
-        }
-      ]
-    }
-  ]
-}
+								<b style ="display:inline;">About :</b>
+								<p style="display:inline;">
+									<i> Learn the basics of HTML and CSS.</i>
+								</p>
+					    </div>
+				    </div>
+			    </div>
 
-      request.send(JSON.stringify(params));
-    }
-  </script>
+<div class="well profileCard">
+						<div class="row">
+							<div class="col-xs-3">
+								<a href="">
+									<img height="150" width="150" src="core/html/img/lua.png">
+								</a>
+							</div>
+						<div class="col-xs-9">
 
-  <script>
-  	$('button.cooldown').click(function(){
-  var btn = $(this);
-  btn.prop('disabled', true);
-  setTimeout(function(){
-    btn.prop('disabled', false);
-  },60000);
-});
-  </script>
-				</div>
+								<h4>
+									<p><font color="red">●</font> Basic Learning in Lua. [IN DEV]</p>
+									<a href="http://axonedev.xyz/ufs" class="btn btn-primary" style="margin-bottom:10px;">Learn</a>
+								</h4>
+
+								<b>Creation Date :</b>
+										 27/10/2021
+								<br>
+
+								<b style ="display:inline;">About :</b>
+								<p style="display:inline;">
+									<i> Learn the basics of Lua.</i>
+								</p>
+					    </div>
+				    </div>
+			    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 			</div>
 		</div>
-
-<div class="container">
-<h3 class="wtext">Axone's Final Project birthday !</h3>
-<p>Axone released his last project on 5th November 2021 </p>
-<p>More informations there : <a href="projects.html">project page</a>.</p>
-<p>Be avalaible to celebrate this event</a>!</p>
-
-  <div id="countdown">
-    <ul>
-      <li class ="yup"><span id="days"></span>Days</li>
-      <li class ="yup"><span id="hours"></span>Hours</li>
-      <li class ="yup"><span id="minutes"></span>Minutes</li>
-      <li class ="yup"><span id="seconds"></span>Seconds</li>
-    </ul>
-  </div>
-  
-  </div>
-
-
-
-</div>
-
-<script>(function () {
-  const second = 1000,
-        minute = second * 60,
-        hour = minute * 60,
-        day = hour * 24;
-
-  let today = new Date(),
-      dd = String(today.getDate()).padStart(2, "0"),
-      mm = String(today.getMonth() + 1).padStart(2, "0"),
-      yyyy = today.getFullYear(),
-      nextYear = yyyy + 1,
-      dayMonth = "11/5/",
-      birthday = dayMonth + 2022;
-  
-  today = mm + "/" + dd + "/" + yyyy;
-  if (today > birthday) {
-    birthday = dayMonth + nextYear;
-  }
-  //end
-  
-  const countDown = new Date(birthday).getTime(),
-      x = setInterval(function() {    
-
-        const now = new Date().getTime(),
-              distance = countDown - now;
-
-        document.getElementById("days").innerText = Math.floor(distance / (day)),
-          document.getElementById("hours").innerText = Math.floor((distance % (day)) / (hour)),
-          document.getElementById("minutes").innerText = Math.floor((distance % (hour)) / (minute)),
-          document.getElementById("seconds").innerText = Math.floor((distance % (minute)) / second);
-
-        //do something later when date is reached
-        if (distance < 0) {
-          document.getElementById("headline").innerText = "It's my birthday!";
-          document.getElementById("countdown").style.display = "none";
-          document.getElementById("content").style.display = "block";
-          clearInterval(x);
-        }
-        //seconds
-      }, 0)
-  }());</script>
-
-
-
-
-
-
-
-
-
-
-
-
-
 		<style>
 	@media only screen and (max-width: 500px) {
 		.footer {

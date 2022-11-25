@@ -104,7 +104,7 @@ $(document).ready(function() {
 	}, 30000);
 });
 
-function showDMCA() {
-	$(".gModalContent").html('<h2>INFORMATIONS</h2><p>uhhhhhhhh i am not like most girls... I HAVE A COCK</p>');
+function showABOUTUS() {
+	$(".gModalContent").html('<h2>ABOUT US</h2><p>Axone was created by Your Local Musk and Mogus in 2021 for a project that is now discontinued. Many people joined and participated actively on our projects, including Ficello, Nota, Himaide, SrAzber and HelloIts_us who are now members of Axone. <br> This website shows all of our projects and more. </p>');
 	$('.globalModal').modal({ show: true});
 }

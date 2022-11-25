@@ -105,6 +105,6 @@ $(document).ready(function() {
 });
 
 function showABOUTUS() {
-	$(".gModalContent").html('<h2>ABOUT US</h2><p>Axone was created by Your Local Musk and Mogus in 2021 for a project that is now discontinued. Many people joined and participated actively on our projects, including Ficello, Nota, Himaide, SrAzber and HelloIts_us who are now members of Axone. <br> This website shows all of our projects and more. </p>');
+	$(".gModalContent").html('<h2>ABOUT US</h2><p>Axone was created by Your Local Musk and Mogus in 2021 for a project that is now discontinued. Many people joined and participated actively on our projects, including Ficello, Nota, Himaide, SrAzber and HelloIts_us who are now members of Axone. <br> This website shows all of our projects and more. The group behind Axone is also called "mogus team". We work together on Axone and there is no hierarchy between us : we are an "Ownship Group".</p>');
 	$('.globalModal').modal({ show: true});
 }

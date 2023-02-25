@@ -1,1 +1,0 @@
-<meta http-equiv="Refresh" content="0; url='https://link-hub.net/452427/polyx-lua-executor'" />
